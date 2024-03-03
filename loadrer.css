@@ -1,0 +1,47 @@
+
+
+#loder-container,.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    gap: 30px;
+}
+.flask {
+    width: 20px;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    background: #ffffff21;
+    box-shadow: inset 0px 0px 10px 0px rgb(255 255 255 / 23%), 
+                0px 0px 10px 0px rgb(43 43 43);
+}
+.flask::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #81e95b;
+    border-radius: 0 0 15px 15px;
+    animation: fill-animation 1.3s ease-in-out infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes fill-animation {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        filter: hue-rotate(200deg);
+        transform: translateY(100%);
+    }
+}

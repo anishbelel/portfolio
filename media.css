@@ -1,0 +1,228 @@
+@media screen and (max-width: 2652px) and (min-width: 1441px) {
+    html {
+        font-size: 100%;
+    }
+
+    body {
+        width: 50%;
+        margin: auto;
+        background: #000;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    html {
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 1040px) and (min-width: 769px) {
+    html {
+        font-size: 80%;
+    }
+    .section-1-bg h1 {
+        
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .section-2{
+        margin-bottom: 5rem;
+    }
+    .section-2 img {
+        width: 30vw;
+        
+    }
+    
+}
+
+@media screen and (max-width: 880px){
+    .social-container{
+        margin: 5vw;
+        
+    }
+    .fa-brands{
+        
+        font-size: 2rem;
+    }
+    .projects {
+        width: 90vw;
+        height: calc(800px - 10vw);
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+
+    .py-5 {
+        padding: 3rem 0;
+    }
+
+    .menu {
+        display: block;
+        margin-right: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .main-header {
+        padding: 1rem 1rem;
+    }
+
+    .main-header ul {
+        position: absolute;
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        left: 0;
+        top: 5rem;
+        z-index: 1;
+    }
+
+    #addClass {
+        display: none;
+    }
+
+    .nav-icon div {
+        margin-right: 1.5rem;
+        margin-left: 1.1rem;
+        display: none;
+    }
+
+    /* Nav bar responsie End */
+
+    .section-1-bg h1 {
+        
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .section-1-bg .img {
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    .section-2 {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .section-2 img {
+        width: 90vw
+        
+    }
+    .px-1{
+        margin-bottom: 5rem;
+    }
+    .px-2{
+        margin-bottom: 5rem;
+    }
+
+    
+
+    /* section-3 Start */
+    .section-3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-3 .detail {
+        width: 100%;
+    }
+
+    .section-3 .img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .card{
+        width: 90vw;
+    }
+    .skill{
+        margin: 2vw;
+        padding: 3vw;
+        
+      }
+      .About h1{
+        font-size: 10vw;
+        color: transparent;
+          -webkit-text-stroke: 4px;
+          -webkit-text-stroke-color: rgb(33, 9, 214);
+    }
+}
+
+
+@media screen and (max-width: 610px){
+    .social-container{
+        display: none;
+    }
+    .hidden-container{
+        display: flex;
+    justify-content: center;
+    }
+    .icon{
+        height: 15vh;
+    }
+    .About h1{
+        font-size: 10vw;
+        color: transparent;
+          -webkit-text-stroke: 2px;
+          -webkit-text-stroke-color: rgb(33, 9, 214);
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .fs-3 {
+        font-size: 2rem;
+    }
+
+    html {
+        font-size: 100%;
+    }
+
+    .section-1-bg h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .section-1-bg p {
+        top: 9rem;
+    }
+
+    .section-2 {
+        margin-top: 2rem;
+    }
+    
+    
+    .skill{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        
+      }
+
+      .items{
+        
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .hidden-card{
+        padding: 15px 8px;
+        gap: 0.5rem;
+    }
+    .img-container {
+      height: 40%;
+      }
+      
+}
+@media screen and (max-width: 368px){
+    .projects {
+        overflow: scroll;
+        width: 90vw;
+        height: calc(750px - 1vw);
+    }
+}
+@media screen and (max-width: 200px){
+    .skill{
+        margin: 0.4rem;
+        padding: 0.4rem;
+        
+      }
+}

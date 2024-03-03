@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <title>Contact Me</title>
+</head>
+<body>
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="contact-form">
+      <h1>For any query feel free to reach me</h1>
+      <form action="#">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Query:</label>
+          <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+        </div>
+        <button id="submit" class="btn" type="button">
+          <strong>SUBMIT</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+        
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button>
+        <a href="index.html" class="home-link">Go Back to Home</a>
+        
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+  :root {
+      --genral-font-family: 'Inter', sans-serif;
+      --primary-color: #55e6a5;
+      --primary-bg: #000;
+      --text-color: rgb(255 255 255 / 75%);
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: var(--genral-font-family);
+      background: var(--primary-bg);
+  }
+
+  h1,
+  h2,
+  h3,
+  h5 {
+      color: #fff;
+      font-weight: 600;
+  }
+
+  p {
+      color: var(--text-color);
+      font-weight: 400;
+      line-height: 2rem;
+  }
+
+  /* GENRAL CSS START */
+  .mt-4 {
+      margin-top: 4rem;
+  }
+
+  .mb-4 {
+      margin-bottom: 4rem;
+  }
+
+  .mt-2 {
+      margin-top: 1.5rem;
+  }
+
+  .mb-2 {
+      margin-bottom: 2rem;
+  }
+
+  .px-1 {
+      padding: 0 1.5rem;
+  }
+
+  .py-5 {
+      padding: 6rem 0;
+  }
+
+  .fs-3 {
+      font-size: 3rem;
+  }
+
+  .fs-1 {
+      font-size: 1.125rem;
+  }
+  #image-container {
+    display: none;
+  }
+
+  .trans-text-bg {
+    
+    background: linear-gradient(to right, #9370db, #ffd700,#007bff,#32cd32,#ff6347);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      overflow: hidden; /* Hide any overflowing content */
+    white-space: nowrap;
+  }
+
+  .trans-text {
+      color: transparent;
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: rgb(105, 100, 100);
+  }
+
+  /* GENRAL CSS END */
+
+  /* Sticky-top with animation */
+  .page-header.is-sticky {
+      background: #222222;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 0.9s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+      from {
+          transform: translateY(-100%);
+      }
+
+      to {
+          background: linear-gradient(to right,#ff4500, #007bff,rgb(177,52,255));
+          transform: translateY(0);
+      }
+  }
+
+  
+  .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+  }
+
+  .main-header nav {
+      display: flex;
+      align-items: center;
+  }
+
+  .main-header ul {
+      display: flex;
+      list-style-type: none;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      white-space: nowrap;
+  }
+
+  .main-header ul li {
+      padding: 2.188rem 1.1rem;
+  }
+
+  .main-header ul li a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      opacity: 1;
+      text-decoration: none;
+      transition: all .3s ease;
+  }
+  .main-header ul li a:hover {
+    color: var(--primary-color);
+  }
+
+  .nav-icon {
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-icon div {
+      margin-right: 3.125rem;
+      margin-left: 1.375rem;
+  }
+
+  .nav-icon button {
+      background: #ffd700 ;
+      cursor: pointer;
+      width: 3.125rem;
+      height: 3.125rem;
+      line-height: 3.125rem;
+      border: 0;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+  }
+
+  .menu {
+      display: none;
+      color: #fff;
+      font-size: 1.9rem;
+      margin-right: 1rem;
+  }
+
+  .menu i {
+      color: #fff;
+  }
+
+  /* NAVIGATION END */
+
+  /* SECTION-1 START */
+  .section-1 {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-top: 4rem;
+  }
+
+  .section-1-bg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+  }
+
+  .section-1-bg h1 {
+      position: relative;
+      font-size: 9rem;
+      line-height: 9rem;
+  }
+
+  .section-1-bg .img {
+      margin-right: 5rem;
+  }
+
+  .section-1-bg .img img {
+      filter: drop-shadow(0rem 0rem 6rem #55e6a5);
+      width: 100%;
+  }
+
+  /* text on image part */
+  .section-1-bg i {
+      position: absolute;
+      left: 0.2rem;
+      top: 19rem;
+  }
+
+  /* SECTION-2 START*/
+  .section-2 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+  }
+
+  .section-2 img {
+    border: 2px solid black;
+    border-radius: 10px;
+      width: calc(100% - 6%);
+      height: 100%;
+      opacity: 0.3;
+  }
+
+  .px-2 p{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .section-3{
+    margin-bottom: 2rem;
+    height: 600px;
+  }
+
+  .section-3::before{
+    /* background: url('desktop-wallpaper-portfolio.jpg') no-repeat center; */
+    background: url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg") no-repeat center center/cover;
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  .About{
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      margin: 2rem;
+      overflow: scroll;
+    }
+    
+    .About h1{
+        font-size: 10vw;
+        color: transparent;
+        -webkit-text-stroke: 7px;
+        -webkit-text-stroke-color: rgb(33, 9, 214);
+    }
+    
