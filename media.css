@@ -4,9 +4,14 @@
     }
 
     body {
-        width: 50%;
+        width: 60%;
         margin: auto;
         background: #000;
+    }
+    .section-3::before{
+        
+        width: 60%;
+        
     }
 }
 
