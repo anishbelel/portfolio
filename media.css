@@ -13,6 +13,11 @@
         width: 60%;
         
     }
+    .section-1-bg h1 {
+        
+        font-size: 7.5rem;
+        line-height: 7rem;
+    }
 }
 
 @media screen and (max-width: 1110px) {
@@ -220,7 +225,8 @@
     .img-container {
       height: 40%;
       }
-    .circular-photo {
+
+      .circular-photo {
         width: 15vw; 
         height: 15vw; 
         
@@ -233,11 +239,16 @@
         width: 90vw;
         height: calc(750px - 1vw);
     }
-}
-@media screen and (max-width: 200px){
     .skill{
         margin: 0.4rem;
         padding: 0.4rem;
         
       }
-}
+    }
+    @media screen and (max-width: 200px){
+        .skill{
+            margin: 0.3rem;
+            padding: 0.3rem;
+            
+          }
+    }
